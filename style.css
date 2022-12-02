@@ -123,22 +123,21 @@ main {
 }
 
 .cards {
-  display: flex;
+  display: grid;
   flex-direction: column;
   box-sizing: border-box;
   background: var(--clr-white);
   border: 1px solid #dfe1e6;
-  padding: 1rem;
   gap: 12px;
   border-radius: 1rem;
-  margin: 2rem 2rem 0 2rem;
+  margin: 3rem 3rem 0 3rem;
   box-shadow: 8px 8px 10px -10px rgb(209, 204, 204);
 }
 
 .card-block p {
   font-weight: 400;
   font-size: 16px;
-  color: var(--clr-para);
+  color: #344563;
   line-height: 20px;
 }
 
@@ -150,7 +149,7 @@ main {
 
 .card-frame .no-count {
   list-style: none;
-  color: var(--clr-para);
+  color: #344563;
   font-weight: 600;
   margin-left: 0;
 }
