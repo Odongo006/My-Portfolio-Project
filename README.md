@@ -78,7 +78,7 @@ npm test
 
 <!-- CONTRIBUTING -->
 
-## 🤝 Contributing <a name="contributing"></a>
+## 🤝 Contributing <a name="contributing "></a>
 
 Contributions, issues, and feature requests are welcome!
 
