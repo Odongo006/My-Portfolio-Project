@@ -187,26 +187,28 @@ button {
   color: var(--clr-white);
 }
 
+.about-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  border-radius: 8px;
+  width: 162px;
+  height: 48px;
+}
+
 .about-btn:hover {
   background-color: var(--clr-purple);
   color: var(--clr-white);
 }
-.about-btn{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px;
-    gap: 10px;
-    border-radius: 8px;
-    width: 162px;
-    height: 48px;
-}
-.about-btn p{
-    color: #396DF2;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
+
+.about-btn p {
+  color: #396df2;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
 }
 
 .skill-list li {
@@ -373,7 +375,7 @@ textarea {
   line-height: 52px;
   font-weight: 700;
   max-width: 300px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .about p {
