@@ -113,13 +113,13 @@ main {
   gap: 1rem;
   padding: 0 1rem;
   align-items: center;
-  margin-top: 0.5rem;
+  margin-top: 0;
 }
 
 .social-icons svg {
   width: 1.5rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .cards {
@@ -130,7 +130,7 @@ main {
   border: 1px solid #dfe1e6;
   gap: 12px;
   border-radius: 1rem;
-  margin: 3rem 3rem 0 3rem;
+  margin: 10rem 2rem 0 2rem;
   box-shadow: 8px 8px 10px -10px rgb(209, 204, 204);
 }
 
@@ -148,10 +148,10 @@ main {
 }
 
 .card-frame .no-count {
-  list-style: none;
+  list-style: disc;
   color: #344563;
   font-weight: 600;
-  margin-left: 0;
+  margin-left: 10px;
 }
 
 .card-tags li {
