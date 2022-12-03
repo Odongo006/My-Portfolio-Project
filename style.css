@@ -105,15 +105,16 @@ main {
   font-size: 15px;
   line-height: 24px;
   color: #7f8cff;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .social-icons {
   display: flex;
   gap: 1rem;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   align-items: center;
-  margin-top: 0;
+  margin-bottom: 15rem;
+  padding-top: 10px;
 }
 
 .social-icons svg {
@@ -436,6 +437,6 @@ textarea {
   .box2 h1 {
     font-size: 40px;
     max-width: 300px;
-    line-height: 4rem;
+    line-height: 3rem;
   }
 }
