@@ -420,6 +420,7 @@ textarea {
   }
 
   .form-group {
+    display: flex;
     background-image: url(imgs/contact\ form\ shapes-mobile.svg);
     background-repeat: no-repeat;
     background-position: 100% 100px;
