@@ -250,6 +250,7 @@ button {
   padding: 6rem 1.8rem;
   height: auto;
   box-shadow: -5px -15px 10px -10px rgba(83, 81, 81, 0.15);
+  margin-top: 115px;
 }
 
 .form-group h2 {
@@ -351,6 +352,8 @@ textarea {
   list-style: none;
   display: flex;
 }
+
+
 
 /* About Me styles */
 
