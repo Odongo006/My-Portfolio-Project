@@ -67,13 +67,10 @@ body {
   display: flex;
   flex-direction: column;
   box-shadow: -10px 10px 10px -6px rgba(207, 205, 205, 0.501);
-  
   border-bottom-left-radius: 3rem;
   box-sizing: border-box;
   position: relative;
 }
-
-
 
 .Greetings h1 {
   font-style: normal;
@@ -512,7 +509,7 @@ textarea {
     padding-top: 13rem;
   }
 
-  .card 1 img {
+  .card img {
     height: 100%;
     width: 100%;
   }
