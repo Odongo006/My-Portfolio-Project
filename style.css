@@ -177,7 +177,7 @@ button {
   font-size: 17px;
 }
 
-.card-button{
+.card-button {
   margin-block-start: 50px;
 }
 
@@ -189,7 +189,7 @@ button {
 .about-btn {
   display: flex;
   flex-direction: row;
-  justify-content: center; 
+  justify-content: center;
   gap: 10px;
   border-radius: 8px;
   width: 162px;
@@ -269,7 +269,6 @@ button {
   padding: 1rem;
   gap: 12px;
   border-radius: 1rem;
-  
   box-shadow: 8px 8px 10px -10px rgb(209, 204, 204);
 }
 
@@ -364,7 +363,7 @@ textarea {
   flex-direction: column;
   border-top-right-radius: 5rem;
   box-shadow: 0 -10px 10px -10px rgba(83, 81, 81, 0.15);
-  margin-bottom: 0rem;
+  margin-bottom: 0;
 }
 
 .about h2 {
@@ -381,8 +380,6 @@ textarea {
   line-height: 24px;
   font-size: 1rem;
   font-weight: 400;
-  
- 
 }
 
 .lang {
@@ -403,7 +400,7 @@ textarea {
 
 @media screen and (min-width: 320px) {
   .box2 {
-    background-image: url(imgs/header-shapes\ mobile@2x.svg); 
+    background-image: url(imgs/header-shapes\ mobile@2x.svg);
     background-position: 0% auto;
     background-size: cover;
     background-repeat: no-repeat;
@@ -493,7 +490,7 @@ textarea {
   .Greetings h1 {
     font-size: 48px;
     width: 920px;
-    height: 0px;
+    height: 0;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -502,7 +499,7 @@ textarea {
 
   .Greetings h5 {
     width: 920px;
-    height: 0px;
+    height: 0;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -513,12 +510,11 @@ textarea {
   }
 
   .card img {
-    Width: 544px;
-    Height: 448px;
+    width: 544px;
+    height: 448px;
     top: 24px;
     left: 590px;
     border-radius: 8px;
-    
   }
 
   .card {
@@ -526,10 +522,10 @@ textarea {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
     margin: 3rem;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     border-radius: 24px;
   }
 
@@ -538,8 +534,7 @@ textarea {
     font-size: 40px;
     line-height: 35px;
     font-weight: 700;
-    color: #091E42;
-    line-height: 52px;
+    color: #091e42;
   }
 
   .social-icons svg {
@@ -560,12 +555,10 @@ textarea {
     width: 496px;
     height: 50px;
     line-height: 24px;
-
   }
 
   .card-tags li {
     font-size: 0.9rem;
-    
   }
 
   .form-group h2 {
@@ -620,8 +613,6 @@ textarea {
     align-items: flex-start;
     gap: 24px;
     margin: auto 0 2rem 2rem;
-    
-    
     width: 150%;
   }
 
