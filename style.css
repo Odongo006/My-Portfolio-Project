@@ -67,9 +67,11 @@ body {
   display: flex;
   flex-direction: column;
   box-shadow: -10px 10px 10px -6px rgba(207, 205, 205, 0.501);
-  border-bottom-left-radius: 3rem;
-  box-sizing: border-box;
+  border-bottom-left-radius: 5rem;
+  background-image: url(imgs/Header-Bckgrnd.png);
   position: relative;
+  width: 1440px;
+  height: 846px;
 }
 
 .Greetings h1 {
@@ -107,8 +109,6 @@ main {
   display: flex;
   gap: 1rem;
   align-items: center;
-  margin-bottom: 15rem;
-  padding-top: 10px;
 }
 
 .social-icons svg {
@@ -186,7 +186,6 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 12px;
   gap: 10px;
   border-radius: 8px;
   width: 162px;
@@ -241,10 +240,8 @@ button {
   box-sizing: border-box;
   border: 1px solid var(--clr-purple);
   border-top-left-radius: 5rem;
-  padding: 6rem 1.8rem;
   height: auto;
   box-shadow: -5px -15px 10px -10px rgba(83, 81, 81, 0.15);
-  margin-top: 115px;
 }
 
 .form-group h2 {
@@ -332,6 +329,9 @@ textarea {
   background: var(--clr-white);
   display: flex;
   cursor: pointer;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .btn:hover {
@@ -360,10 +360,6 @@ textarea {
   border-top-right-radius: 5rem;
   box-shadow: 0 -10px 10px -10px rgba(83, 81, 81, 0.15);
   margin-bottom: 3rem;
-}
-
-.about-child {
-  padding: 5px 20px;
 }
 
 .about h2 {
@@ -401,7 +397,7 @@ textarea {
 
 @media screen and (min-width: 320px) {
   .box2 {
-    background-image: url(imgs/header-shapes\ mobile@2x.svg);
+    /* background-image: url(imgs/header-shapes\ mobile@2x.svg); */
     background-position: 0% auto;
     background-size: cover;
     background-repeat: no-repeat;
@@ -440,11 +436,11 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .box2 {
-    background-image: url(imgs/Header\ bg.svg);
-    background-size: cover;
+    background-image: url(imgs/Header-Bckgrnd.png);
+    background-size: contain;
+    background-position: 0% 100px;
     background-repeat: no-repeat;
     width: 100%;
-    margin-bottom: 100px;
   }
 
   .about {
@@ -470,6 +466,7 @@ textarea {
 
   .box2 p {
     font-size: 20px;
+    align-items: center;
   }
 
   .box2 a {
@@ -482,9 +479,7 @@ textarea {
   }
 
   .Greetings {
-    margin-block-start: 15rem;
-    margin-left: 8rem;
-    align-items: center;
+    padding: 0 15rem;
   }
 
   .Greetings h1 {
@@ -557,7 +552,14 @@ textarea {
   }
 
   .form-child {
-    margin: 0 8rem;
+    width: 447px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .skill-list {
+    padding-left: 15rem;
   }
 
   .skill-list p {
@@ -582,12 +584,22 @@ textarea {
   }
 
   .about-child {
-    margin: auto 0 0 3rem;
-    padding: 4rem 0 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin: auto 0 4rem 3rem;
+    margin-bottom: 10rem;
+    padding: 4rem 0 0 0;
+    width: 447px;
   }
 
   .about p {
     padding-bottom: 0;
+  }
+
+  .prg {
+    width: 60%;
   }
 
   .lang li {
