@@ -373,7 +373,7 @@ textarea {
   font-weight: 700;
   max-width: 200px;
   color: #172b4d;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
 }
 
 .about p {
