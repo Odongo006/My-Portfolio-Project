@@ -405,7 +405,7 @@ textarea {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 1rem;
   }
 
   .about-child {
