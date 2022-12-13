@@ -427,6 +427,11 @@ textarea {
     color: #7f8cff;
   }
 
+  .social-icons svg {
+    width: 1rem;
+    margin-inline-start: 0.5rem;
+  }
+
   .skill-list .p {
     margin: 0 1.8rem;
   }
