@@ -414,7 +414,7 @@ textarea {
     align-items: flex-start;
     gap: 24px;
     margin: auto 0 2rem 2rem;
-    
+    padding-top: 3rem;
   }
 
   .about {
