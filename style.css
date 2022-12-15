@@ -67,14 +67,10 @@ body {
   display: flex;
   flex-direction: column;
   box-shadow: -10px 10px 10px -6px rgba(207, 205, 205, 0.501);
-  padding-bottom: 0;
-  border-bottom-left-radius: 3rem;
-  box-sizing: border-box;
+  border-bottom-left-radius: 5rem;
   position: relative;
-}
-
-.Greetings {
-  margin: 0 0;
+  width: 1440px;
+  height: 846px;
 }
 
 .Greetings h1 {
@@ -91,7 +87,7 @@ main {
   display: grid;
 }
 
-.Content {
+.Greetings h5 {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -100,21 +96,19 @@ main {
   padding: 1rem;
 }
 
-.contact {
+.Greetings p {
   font-weight: 600;
   font-size: 15px;
   line-height: 24px;
   color: #7f8cff;
-  padding: 1.5rem;
+  margin-top: 6rem;
+  padding-left: 1rem;
 }
 
 .social-icons {
   display: flex;
   gap: 1rem;
-  padding: 0 1.5rem;
   align-items: center;
-  margin-bottom: 15rem;
-  padding-top: 10px;
 }
 
 .social-icons svg {
@@ -183,6 +177,10 @@ button {
   font-size: 17px;
 }
 
+.card-button {
+  margin-block-start: 50px;
+}
+
 .card-button:hover {
   background-color: var(--clr-purple);
   color: var(--clr-white);
@@ -191,8 +189,7 @@ button {
 .about-btn {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  padding: 12px;
+  justify-content: center;
   gap: 10px;
   border-radius: 8px;
   width: 162px;
@@ -247,10 +244,8 @@ button {
   box-sizing: border-box;
   border: 1px solid var(--clr-purple);
   border-top-left-radius: 5rem;
-  padding: 6rem 1.8rem;
   height: auto;
   box-shadow: -5px -15px 10px -10px rgba(83, 81, 81, 0.15);
-  margin-top: 115px;
 }
 
 .form-group h2 {
@@ -274,7 +269,6 @@ button {
   padding: 1rem;
   gap: 12px;
   border-radius: 1rem;
-  margin: 2rem 2rem 0 2rem;
   box-shadow: 8px 8px 10px -10px rgb(209, 204, 204);
 }
 
@@ -338,6 +332,9 @@ textarea {
   background: var(--clr-white);
   display: flex;
   cursor: pointer;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .btn:hover {
@@ -351,6 +348,7 @@ textarea {
   margin: 1rem 0;
   list-style: none;
   display: flex;
+  margin-block-start: 60px;
 }
 
 /* About Me styles */
@@ -365,19 +363,16 @@ textarea {
   flex-direction: column;
   border-top-right-radius: 5rem;
   box-shadow: 0 -10px 10px -10px rgba(83, 81, 81, 0.15);
-  margin-bottom: 3rem;
-}
-
-.about-child {
-  padding: 5px 20px;
+  margin-bottom: 0;
 }
 
 .about h2 {
-  font-size: 3.5rem;
+  font-size: 40px;
   line-height: 52px;
   font-weight: 700;
-  max-width: 300px;
+  max-width: 200px;
   color: #172b4d;
+  font-family: 'Poppins', sans-serif;
 }
 
 .about p {
@@ -385,8 +380,6 @@ textarea {
   line-height: 24px;
   font-size: 1rem;
   font-weight: 400;
-  margin: 1rem 0;
-  padding: 1.5rem 0;
 }
 
 .lang {
@@ -412,11 +405,22 @@ textarea {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .about-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin: auto 0 2rem 2rem;
+    padding-top: 3rem;
   }
 
   .about {
     margin: 5rem 0 0 0;
     padding-bottom: 2rem;
+    width: 100%;
   }
 
   .form-group {
@@ -432,13 +436,239 @@ textarea {
     color: #7f8cff;
   }
 
+  .social-icons svg {
+    width: 1rem;
+    margin-inline-start: 0.5rem;
+  }
+
   .skill-list .p {
     margin: 0 1.8rem;
   }
 
-  .box2 h1 {
+  .Greetings h1 {
     font-size: 40px;
     max-width: 300px;
     line-height: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .box2 {
+    background-image: url(imgs/Header-Bckgrnd.png);
+    background-size: contain;
+    background-position: 0% 100px;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 300px 2fr;
+    padding-top: 3rem;
+    margin-bottom: 0;
+  }
+
+  .form-group {
+    background-image: url(imgs/contact\ form\ background\ shapes@2x.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 100px;
+    background-size: cover;
+  }
+
+  .box2 h1 {
+    font-size: 3rem;
+    line-height: 4.55rem;
+    max-width: 400px;
+    align-items: center;
+  }
+
+  .box2 p {
+    font-size: 20px;
+    align-items: center;
+  }
+
+  .box2 a {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .MyLogo a {
+    margin-left: 3.5rem;
+  }
+
+  .Greetings {
+    padding: 0 15rem;
+    margin-block-start: 12rem;
+  }
+
+  .Greetings h1 {
+    font-size: 48px;
+    width: 920px;
+    height: 0;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+  }
+
+  .Greetings h5 {
+    width: 920px;
+    height: 0;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+    padding-top: 12rem;
+  }
+
+  .card img {
+    width: 544px;
+    height: 448px;
+    top: 24px;
+    left: 590px;
+    border-radius: 8px;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 3rem;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 24px;
+  }
+
+  .card-block h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    line-height: 35px;
+    font-weight: 700;
+    color: #091e42;
+  }
+
+  .social-icons svg {
+    width: 1rem;
+    margin-inline-start: 0.5rem;
+  }
+
+  .two img:nth-of-type(1) {
+    order: 1;
+  }
+
+  .card-block p {
+    font-size: 16px;
+    color: var(--clr-para);
+    color: #344563;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    width: 496px;
+    height: 50px;
+    line-height: 24px;
+  }
+
+  .card-tags li {
+    font-size: 0.9rem;
+  }
+
+  .form-group h2 {
+    padding-top: 2rem;
+  }
+
+  .card-frame {
+    margin: 0;
+  }
+
+  .card-block {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .form-child {
+    width: 447px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .skill-list {
+    padding-left: 15rem;
+    width: 85%;
+  }
+
+  .skill-list p {
+    padding-bottom: 1rem;
+    margin: 0 0 0 2rem;
+  }
+
+  .social-icons svg:hover {
+    transition: transform 250ms;
+    transform: scale(1.2);
+  }
+
+  .about h2 {
+    font-size: 3rem;
+    line-height: 50px;
+    font-weight: 600;
+  }
+
+  .about-child a {
+    font-weight: 500;
+    color: #7f8cff;
+  }
+
+  .about-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin: auto 0 2rem 2rem;
+    width: 150%;
+  }
+
+  .about p {
+    padding-bottom: 0;
+    max-width: 500px;
+  }
+
+  .prg {
+    width: 60%;
+  }
+
+  .lang li {
+    display: block;
+    flex-direction: column;
+    transition-delay: 150ms;
+    transition-duration: 350ms;
+  }
+
+  li .lang {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+  }
+
+  .lang li:hover {
+    transform: scale(1.3);
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .topNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    width: 259px;
+    height: 40px;
+    left: 1039px;
+    top: 16px;
   }
 }
