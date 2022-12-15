@@ -59,6 +59,9 @@ To run the project, execute the following command:
 
 npm start or live server
 
+You can as well access the site online using the link below
+- Website: [@Portfolio](https://odongo006.github.io/My-Portfolio-Project/)
+
 
 ### Run tests
 
