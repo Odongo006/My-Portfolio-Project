@@ -1,8 +1,8 @@
 /* eslint-disable linebreak-style */
 // eslint-disable-next-line linebreak-style
 // eslint-disable-next-line linebreak-style
-const hamburger = document.querySelector('.menu-icon');
-const navMenu = document.querySelector('.nav-items');
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.top-nav');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
