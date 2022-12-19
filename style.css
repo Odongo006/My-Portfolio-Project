@@ -49,6 +49,14 @@ body {
   color: #6070ff;
 }
 
+.closeIcon {
+  display: none;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
 /* Hamburger menu */
 .hamburger {
   display: block;
