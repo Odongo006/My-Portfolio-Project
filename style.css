@@ -47,26 +47,19 @@ body {
   z-index: 1;
 }
 
-.closeIcon{
-  font-size: 25px;
-  color: white;
-  margin: 10% 10% 0 0;
-  cursor: pointer;
-}
-
-.top-nav{
+.top-nav {
   margin-top: 10%;
   width: 100%;
 }
 
-.ul-cont-appear{
+.ul-cont-appear {
   display: flex;
 }
 
 .nav-link {
   display: flex;
   align-items: center;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -91,6 +84,10 @@ body {
   background-image: url(imgs/x-icon.png);
   width: 10px;
   height: 10px;
+  font-size: 25px;
+  color: white;
+  margin: 10% 10% 0 0;
+  cursor: pointer;
 }
 
 .showMenu {
@@ -102,7 +99,7 @@ body {
   display: block;
 }
 
-.hamburger-disappear{
+.hamburger-disappear {
   display: none;
 }
 
