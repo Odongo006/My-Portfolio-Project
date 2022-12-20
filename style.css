@@ -38,6 +38,41 @@ body {
 
 .topNav {
   display: none;
+  background-color: #6070ff;
+  height: 810px;
+  width: 375px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.ul-cont {
+  display: block;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  
+  width: 351px;
+  height: 184px;
+  left: 12px;
+  top: 90px;
+}
+
+.nav-link {
+  
+  height: 24px;
+  left: 0;
+  right: 68px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #fff;
 }
 
 .nav-items {
@@ -50,7 +85,10 @@ body {
 }
 
 .closeIcon {
-  display: none;
+  display: block;
+  background-image: url(imgs/x-icon.png);
+  width: 10px;
+  height: 10px;
 }
 
 .showMenu {
