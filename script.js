@@ -1,25 +1,19 @@
-/* eslint-disable linebreak-style */
-// eslint-disable-next-line linebreak-style
-// eslint-disable-next-line linebreak-style
+const hamburger = document.querySelector('.hamburger');
+const ulCont = document.querySelector('.ul-cont');
 
-// eslint-disable-next-line no-unused-vars
-function myFunction() {
-  const x = document.getElementById('navTop');
-  if (x.style.display === 'block') {
-    x.style.display = 'none';
-  } else {
-    x.style.display = 'block';
-  }
+function myFunction(){
+    hamburger.classList.add("hamburger-disappear")
+    ulCont.classList.add("ul-cont-appear")
 }
-// const hamburger = document.querySelector('.hamburger');
-// const navMenu = document.querySelector('.top-nav');
 
-// hamburger.addEventListener('click', () => {
-//   hamburger.classList.toggle('active');
-//   navMenu.classList.toggle('active');
-// });
+ulCont.addEventListener("click",((e)=>{
+    if (e.target.classList[0] === "closeIcon"){
+        hamburger.classList.remove("hamburger-disappear")
+        ulCont.classList.remove("ul-cont-appear")
 
-// document.querySelectorAll('.nav-link a').forEach((n) => (n).addEventListener('click', () => {
-//   hamburger.classList.remove('active');
-//   navMenu.classList.remove('active');
-// }));
+    } else if (e.target.classList[0] === "nav-link"){
+        hamburger.classList.remove("hamburger-disappear")
+        ulCont.classList.remove("ul-cont-appear")
+    }
+}))
+console.log(hamburger);
