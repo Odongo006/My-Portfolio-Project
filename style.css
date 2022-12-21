@@ -709,7 +709,7 @@ textarea {
     display: none;
   }
 
-  .topNav {
+  .top-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
