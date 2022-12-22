@@ -220,7 +220,7 @@ main {
   height: 586px;
   left: 0;
   top: 0;
-  background-image: url(imgs/Snapshoot\ Portfolio\ \(1\).png);
+  background-image: url(imgs/Snapshoot\ Portfolio\ \(1\) .png);
   margin-top: 100px;
   align-content: center;
 }
@@ -353,7 +353,7 @@ main {
   height: 24px;
 }
 
-.actin {
+.action {
   width: 306px;
   height: 56px;
 }
@@ -374,31 +374,26 @@ main {
 }
 
 .see p {
-  
-height: 20px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 20px;
-
-display: flex;
-align-items: center;
-text-align: center;
-
-
-color: #396DF2;
+  height: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.9px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #396df2;
 }
 
-.see1{
+.see1 {
   width: 20px;
   height: 20px;
   background-image: url(imgs/Icon.png);
   background-repeat: no-repeat;
 }
 
-.see2{
+.see2 {
   width: 20px;
   height: 20px;
   background-image: url(imgs/githubVector.png);
