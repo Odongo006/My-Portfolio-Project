@@ -227,7 +227,7 @@ main {
   height: 586px;
   left: 0;
   top: 0;
-  background-image: url(imgs/Snapshoot\ Portfolio\ \(1\).png);
+  background-image: url(imgs/Snapshoot\ Portfolio\ \(1\) .png);
   margin-top: 100px;
   align-content: center;
 }
@@ -236,7 +236,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   position: absolute;
   width: 1080px;
@@ -245,26 +245,25 @@ main {
   top: 24px;
 }
 
-.frame1{
+.frame1 {
   display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 12px;
-
-width: 1108px;
-height: 40px;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 12px;
+  width: 1108px;
+  height: 40px;
 }
 
-.frame2{
+.frame2 {
   display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 12px;
-margin-top: 35px;
-width: 1120px;
-height: 36px;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+  margin-top: 35px;
+  width: 1120px;
+  height: 36px;
 }
 
 .closeIcon-popup {
@@ -279,7 +278,7 @@ height: 36px;
 }
 
 .top-block h2 {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -297,19 +296,19 @@ height: 36px;
   margin-top: -50px;
 }
 
-.overlay{
+.overlay {
   position: absolute;
-left: 0px;
-right: 0px;
-top: 0px;
-bottom: -260px;
-background: #C1C7D0;
-mix-blend-mode: multiply;
-backdrop-filter: blur(3px);
-z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: -260px;
+  background: #c1c7d0;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(3px);
+  z-index: 1;
 }
 
-.card-tags2 li{
+.card-tags2 li {
   border-radius: 8px;
   list-style-type: circle;
   font-size: 0.75rem;
@@ -324,7 +323,7 @@ z-index: 1;
   padding: 4px 12px;
 }
 
-.card-tags1 li{
+.card-tags1 li {
   border-radius: 8px;
   list-style-type: circle;
   font-size: 0.75rem;
@@ -339,66 +338,64 @@ z-index: 1;
   padding: 4px 12px;
 }
 
-.card-tags2{
+.card-tags2 {
   display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 8px;
-
-width: 203px;
-height: 24px;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  width: 203px;
+  height: 24px;
 }
 
 .card-tags1 {
   display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 8px;
-
-width: 228px;
-height: 24px;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  width: 228px;
+  height: 24px;
 }
 
-.actin{
+.actin {
   width: 306px;
   height: 56px;
 }
 
-.seeSource{
+.seeSource {
   box-sizing: border-box;
-
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 8px 12px;
-gap: 10px;
-background-color: #ebebff;
-position: absolute;
-width: 142px;
-height: 40px;
-left: 159px;
-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 10px;
+  background-color: #ebebff;
+  position: absolute;
+  width: 142px;
+  height: 40px;
+  left: 159px;
+  bottom: 16px;
 }
 
-.seeLive{
+.seeLive {
   box-sizing: border-box;
 
-/* Auto layout */
+  /* Auto layout */
 
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 8px 25px;
-gap: 10px;
-background-color: #ebebff;
-position: absolute;
-width: 142px;
-height: 40px;
-left: 5px;
-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 25px;
+  gap: 10px;
+  background-color: #ebebff;
+  position: absolute;
+  width: 142px;
+  height: 40px;
+  left: 5px;
+  bottom: 16px;
 }
+
 .left-block {
   display: flex;
   flex-direction: column;
@@ -414,16 +411,15 @@ bottom: 16px;
 
 .right-block {
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 12px;
-
-position: absolute;
-width: 280px;
-height: 157px;
-right: 24px;
-top: 781px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 12px;
+  position: absolute;
+  width: 280px;
+  height: 157px;
+  right: 24px;
+  top: 781px;
 }
 
 .card-tags li {
