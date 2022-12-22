@@ -218,9 +218,10 @@ main {
   position: absolute;
   width: 1080px;
   height: 586px;
+  margin-left: 30px;
   left: 0;
   top: 0;
-  background-image: url(imgs/Snapshoot\ Portfolio\ \(1\) .png);
+  background-image: url(imgs/snaps.png);
   margin-top: 100px;
   align-content: center;
 }
