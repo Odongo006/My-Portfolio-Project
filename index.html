@@ -5,32 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odongo full-stack web-developer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <link rel="stylesheet" href="style.css">
+    <div class="ul-cont">
+        <span class="closeIcon">x</span>
+        <div class="top-nav">
+            <a class="nav-link" href="#Portfolio">Portfolio</a>
+            <a class="nav-link" href="#About">About</a>
+            <a class="nav-link" href="#Contact">Contact</a>
+        </div>
+    </div>
     <header class="header">
         <nav class="header-nav">
             <p  class="MyLogo">
                 <a class="nav-brand" href="">My Logo</a>
             </p>
-            
-            <ul class="topNav">
-                <li class="nav-items">
-                    <a class="nav-link" href="#Portfolio">Portfolio</a>
-                </li>
-                <li class="nav-items">
-                    <a class="nav-link" href="#About">About</a>
-                </li>
-                <li class="nav-items">
-                    <a class="nav-link" href="#Contact">Contact</a>
-                </li>
-            </ul>
 
-            <div class="hamburger">
+            <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </a>
         </nav>
     </header>
     <main>
@@ -84,8 +80,61 @@
 
         <!--Dynamic rendering of cards in card container-->
         <section class="cards">
-            <div class="card 1">  
-                <img class="tonic" src="imgs/poster.svg" alt="Snapshoot-Portfolio">
+            <div class="card 1"> 
+                <!-- <div class="popup-window hidden" id="Tonic-popup">
+                    <div class="top-block">
+                        <div class="frame1">
+                            <h2>Tonic</h2>
+                            <span id="btn-close" class="closeIcon-popup">x</span>
+                            
+                        </div>
+                     <div class="frame2">
+                        <ul class="card-frame">
+                            <li>CANOPY</li>
+                            <li class="no-count">Back End Dev</li>
+                            <li class="no-count">2015</li>
+                        </ul>
+                     </div>
+                    </div>
+                    <div class="popup-img"></div>
+                     <img class="popup-img" src="imgs/Snapshoot Portfolio (1).png" alt="Snapshoot-Portfolio">
+                    
+                    <div class="right-block">
+                        <ul class="card-tags2">
+                            <li>html</li>
+                            <li>css</li>
+                            <li>javascript</li>
+                        </ul>
+                        <ul class="card-tags1">
+                            <li>Github</li>
+                            <li>Ruby</li>
+                            <li>Frontend</li>
+                        </ul>
+                        <div class="action">
+                            <button class="seeSource">See Source</button>
+                            <button class="seeLive">See Live</button>
+                        </div>
+                    </div>
+
+                    <div class="left-block">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it 1960s with
+                            the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it 1960s with the
+                            releorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the
+                            releawn printer took a galley of type and scrambled it 1960s with the releaLorem
+                            Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industrys standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it 1960s with the relea</p>
+                    </div>
+                </div>
+                <div class="overlay hidden"></div> -->
+
+                    <img class="tonic" src="imgs/poster.svg" alt="Snapshoot-Portfolio">
+                
                     <div class="card-block" id="arti-1">
                         <h2>Tonic</h2>
                         <ul class="card-frame">
@@ -99,12 +148,14 @@
                             <li>css</li>
                             <li>javascript</li>
                         </ul>
-                        <button class="card-button" type="submit">See Project</button>
+                        <button id="seeProj" onclick="popupwindowfn()" class="card-button" type="submit">See Project</button>
                     </div>
+
+                   
             </div>
 
-            <div class="card two">  
-                <img src="imgs/poster2.svg" alt="Snapshoot-Portfolio">
+            <div class="card two"> 
+                    <img src="imgs/poster2.svg" alt="Snapshoot-Portfolio">  
                     <div class="card-block" id="arti-2">
                         <h2>Multi-Post Stories</h2>
                         <ul class="card-frame">
@@ -119,12 +170,12 @@
                             <li>css</li>
                             <li>JavaScript</li>
                         </ul>
-                        <button class="card-button" type="submit">See Project</button>
+                        <button onclick="popupwindowfn()" class="card-button" type="submit">See Project</button>
               </div>
             </div>
 
             <div class="card 1">  
-                <img src="imgs/poster 3.svg" alt="Snapshoot-Portfolio">
+                    <img src="imgs/poster 3.svg" alt="Snapshoot-Portfolio">
                     <div class="card-block" id="arti-3">
                         <h2>Facebook 360</h2>
                         <ul class="card-frame">
@@ -143,8 +194,8 @@
               </div>
             </div>
 
-            <div class="card two">  
-                <img src="imgs/poster 4.svg" alt="Snapshoot-Portfolio">
+            <div class="card two">
+                    <img src="imgs/poster 4.svg" alt="Snapshoot-Portfolio">
                        <div class="card-block" id="arti-4">
                            <h2>Uber Navigation</h2>
                            <ul class="card-frame">
@@ -248,5 +299,6 @@
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
