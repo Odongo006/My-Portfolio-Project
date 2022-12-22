@@ -2,10 +2,10 @@
 /* eslint-disable linebreak-style */
 const hamburger = document.querySelector('.hamburger');
 const ulCont = document.querySelector('.ul-cont');
-// const modal = document.querySelector('.popup-window');
-// const overlay = document.querySelector('.overlay');
-// const openModalBtn = document.querySelector('.card-button');
-// const closeModalBtn = document.querySelector('.closeIcon-popup');
+const modal = document.querySelector('.popup-window');
+const overlay = document.querySelector('.overlay');
+const openModalBtn = document.querySelector('.card-button');
+const closeModalBtn = document.querySelector('.closeIcon-popup');
 
 function myFunction() {
   hamburger.classList.add('hamburger-disappear');
@@ -22,16 +22,16 @@ ulCont.addEventListener('click', ((e) => {
   }
 }));
 
-// const openModal = function () {
-//   overlay.classList.remove('hidden');
-//   modal.classList.remove('hidden');
-// };
+const openModal = function () {
+  overlay.classList.remove('hidden');
+  modal.classList.remove('hidden');
+};
 
-// openModalBtn.addEventListener('click', openModal);
+openModalBtn.addEventListener('click', openModal);
 
-// const closeModal = function () {
-//   modal.classList.add('hidden');
-//   overlay.classList.add('hidden');
-// };
+const closeModal = function () {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
 
-// closeModalBtn.addEventListener('click', closeModal);
+closeModalBtn.addEventListener('click', closeModal);

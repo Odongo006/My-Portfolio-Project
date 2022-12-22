@@ -201,10 +201,11 @@ main {
 
 .popup-window {
   position: absolute;
-  width: 1108px;
+  width: 1156px;
   height: 1163px;
   left: 142px;
   top: 77px;
+  border-radius: 16px;
   background-color: #fff;
   z-index: 2;
 }
@@ -215,11 +216,11 @@ main {
 
 .popup-img {
   position: absolute;
-  width: 1108px;
+  width: 1080px;
   height: 586px;
   left: 0;
   top: 0;
-  background-image: url(imgs/Snapshoot\ Portfolio\ \(1\) .png);
+  background-image: url(imgs/Snapshoot\ Portfolio\ \(1\).png);
   margin-top: 100px;
   align-content: center;
 }
@@ -289,6 +290,8 @@ main {
 }
 
 .overlay {
+  height: 1577px;
+  width: auto;
   position: absolute;
   left: 0;
   right: 0;
@@ -368,6 +371,38 @@ main {
   height: 40px;
   left: 159px;
   bottom: 16px;
+}
+
+.see p {
+  
+height: 20px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+
+display: flex;
+align-items: center;
+text-align: center;
+
+
+color: #396DF2;
+}
+
+.see1{
+  width: 20px;
+  height: 20px;
+  background-image: url(imgs/Icon.png);
+  background-repeat: no-repeat;
+}
+
+.see2{
+  width: 20px;
+  height: 20px;
+  background-image: url(imgs/githubVector.png);
+  background-repeat: no-repeat;
 }
 
 .seeLive {
