@@ -179,14 +179,6 @@ main {
   box-shadow: 8px 8px 10px -10px rgb(209, 204, 204);
 }
 
-.card-button-disappear {
-  display: ;
-}
-
-.popup-window-appear {
-  display: flex;
-}
-
 .card-block p {
   font-weight: 400;
   font-size: 16px;
