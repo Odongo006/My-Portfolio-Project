@@ -1,3 +1,5 @@
+/* eslint-disable prefer-destructuring */
+/* eslint-disable no-plusplus */
 /* eslint-disable func-names */
 /* eslint-disable linebreak-style */
 const hamburger = document.querySelector('.hamburger');
@@ -74,11 +76,11 @@ const projectLanguagesCss = document.querySelectorAll('.project-languages-css');
 const projectLanguagesJs = document.querySelectorAll('.project-languages-js');
 const projectsDescription = document.querySelectorAll('.projects-description');
 
-for (let i = 0; i < projectLanguagesHtml.length;i++){
-  projectImgSrc[i].src = storeData[i].imagesrc
-  projectLanguagesHtml[i].innerHTML = storeData[i].technologies[0]
-  projectLanguagesRuby[i].innerHTML = storeData[i].technologies[1]
-  projectLanguagesCss[i].innerHTML = storeData[i].technologies[2]
-  projectLanguagesJs[i].innerHTML = storeData[i].technologies[3]
-  projectsDescription[i].innerHTML = storeData[i].description
+for (let i = 0; i < projectLanguagesHtml.length; i++) {
+  projectImgSrc[i].src = storeData[i].imagesrc;
+  projectLanguagesHtml[i].innerHTML = storeData[i].technologies[0];
+  projectLanguagesRuby[i].innerHTML = storeData[i].technologies[1];
+  projectLanguagesCss[i].innerHTML = storeData[i].technologies[2];
+  projectLanguagesJs[i].innerHTML = storeData[i].technologies[3];
+  projectsDescription[i].innerHTML = storeData[i].description;
 }
