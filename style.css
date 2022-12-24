@@ -290,6 +290,10 @@ button {
   color: var(--clr-white);
 }
 
+button.card-button:active{
+  background-color: #2230D2;
+}
+
 .about-btn {
   display: flex;
   flex-direction: row;
