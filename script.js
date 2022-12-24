@@ -115,8 +115,8 @@ const openModal4 = function () {
   overlay.classList.remove('hidden');
   modal.style.display = 'flex';
   // eslint-disable-next-line no-use-before-define
-  popupsProjectImage.src = storeData[0].imagesrc;
-  popupsProjectTitle.innerHTML = storeData[0].name;
+  popupsProjectImage.src = storeData[3].imagesrc;
+  popupsProjectTitle.innerHTML = storeData[3].name;
 };
 
 openModalBtn4.addEventListener('click', openModal4);
