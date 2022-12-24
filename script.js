@@ -7,6 +7,10 @@ const ulCont = document.querySelector('.ul-cont');
 const modal = document.querySelector('.popup-window');
 const overlay = document.querySelector('.overlay');
 const openModalBtn = document.querySelector('.card-button');
+const openModalBtn2 = document.querySelector('.card-button2');
+const openModalBtn3 = document.querySelector('.card-button3');
+const openModalBtn4 = document.querySelector('.card-button4');
+
 const closeModalBtn = document.querySelector('.closeIcon-popup');
 
 function myFunction() {
@@ -24,30 +28,17 @@ ulCont.addEventListener('click', ((e) => {
   }
 }));
 
-const openModal = function () {
-  overlay.classList.remove('hidden');
-  modal.classList.remove('hidden');
-};
-
-openModalBtn.addEventListener('click', openModal);
-
-const closeModal = function () {
-  modal.classList.add('hidden');
-  overlay.classList.add('hidden');
-};
-
-closeModalBtn.addEventListener('click', closeModal);
-
 const storeData = [
   {
     name: 'Tonic',
     description: 'A daily selection of privately personalized reads; no accounts or sign- ups required',
     imagesrc: 'imgs/poster.svg',
+    imagesrc2: 'imgs/snaps.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
     link: 'link_to_live_version.com',
   },
   {
-    name: 'Multi-Post Stories',
+    name: 'Multi Post Stories',
     description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     imagesrc: 'imgs/poster2.svg',
     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
@@ -84,3 +75,55 @@ for (let i = 0; i < projectLanguagesHtml.length; i++) {
   projectLanguagesJs[i].innerHTML = storeData[i].technologies[3];
   projectsDescription[i].innerHTML = storeData[i].description;
 }
+
+const popupsProjectImage = document.querySelector('.popup-img');
+const popupsProjectTitle = document.querySelector('.popups-proj-title');
+
+const openModal = function () {
+  overlay.classList.remove('hidden');
+  modal.style.display = 'flex';
+  // eslint-disable-next-line no-use-before-define
+  popupsProjectImage.src = storeData[0].imagesrc2;
+  popupsProjectTitle.innerHTML = storeData[0].name;
+};
+
+openModalBtn.addEventListener('click', openModal);
+
+const openModal2 = function () {
+  overlay.classList.remove('hidden');
+  modal.style.display = 'flex';
+  // eslint-disable-next-line no-use-before-define
+  popupsProjectImage.src = storeData[1].imagesrc;
+  popupsProjectTitle.innerHTML = storeData[1].name;
+  popupsProjectTitle.style.fontSize = '20px';
+};
+
+openModalBtn2.addEventListener('click', openModal2);
+
+const openModal3 = function () {
+  overlay.classList.remove('hidden');
+  modal.style.display = 'flex';
+  // eslint-disable-next-line no-use-before-define
+  popupsProjectImage.src = storeData[2].imagesrc;
+  popupsProjectTitle.innerHTML = storeData[2].name;
+  popupsProjectTitle.style.fontSize = '17px';
+};
+
+openModalBtn3.addEventListener('click', openModal3);
+
+const openModal4 = function () {
+  overlay.classList.remove('hidden');
+  modal.style.display = 'flex';
+  // eslint-disable-next-line no-use-before-define
+  popupsProjectImage.src = storeData[0].imagesrc;
+  popupsProjectTitle.innerHTML = storeData[0].name;
+};
+
+openModalBtn4.addEventListener('click', openModal4);
+
+const closeModal = function () {
+  modal.style.display = 'none';
+  overlay.classList.add('hidden');
+};
+
+closeModalBtn.addEventListener('click', closeModal);
