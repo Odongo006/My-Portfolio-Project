@@ -34,6 +34,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
+  position: fixed;
+  z-index: 2;
+  background-color: var(--clr-white);
+  width: 100%;
 }
 
 .ul-cont {
@@ -45,11 +49,6 @@ body {
   background-color: #3145f9f3;
   position: absolute;
   z-index: 1;
-}
-
-.top-nav {
-  margin-top: 10%;
-  width: 100%;
 }
 
 .ul-cont-appear {
@@ -97,6 +96,7 @@ body {
 /* Hamburger menu */
 .hamburger {
   display: block;
+  margin-left: 12rem;
 }
 
 .hamburger-disappear {
@@ -203,7 +203,7 @@ main {
   display: none;
 }
 
-.card-tags2 li {
+.card-tagsLi {
   border-radius: 8px;
   list-style-type: circle;
   font-size: 0.75rem;
@@ -218,7 +218,7 @@ main {
   padding: 4px 12px;
 }
 
-.card-tags1 li {
+.card-tagsLi1 {
   border-radius: 8px;
   list-style-type: circle;
   font-size: 0.75rem;
@@ -516,11 +516,12 @@ textarea {
     margin-bottom: 1rem;
   }
 
+  .toolbar-ul {
+    display: none;
+  }
+
   .popup-window {
     box-sizing: border-box;
-
-    /* Auto layout */
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -531,13 +532,7 @@ textarea {
     height: 713px;
     left: calc(50% - 343px / 2);
     top: 60px;
-
-    /* Neutrals/N0 */
-
     background: #fff;
-
-    /* Neutrals/N40 */
-
     border: 1px solid #dfe1e6;
     border-radius: 16px;
   }
@@ -723,6 +718,16 @@ textarea {
     width: 100%;
   }
 
+  .ul-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 10px;
+    width: 87px;
+    height: 40px;
+  }
+
   .about {
     display: grid;
     grid-template-columns: 300px 2fr;
@@ -833,7 +838,7 @@ textarea {
     line-height: 24px;
   }
 
-  .card-tags li {
+  .card-tagsLi {
     font-size: 0.9rem;
   }
 
@@ -922,29 +927,41 @@ textarea {
     display: none;
   }
 
-  .top-nav {
+  .ul-cont {
+    display: none;
+  }
+
+  .toolbar-ul {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    padding: 0;
-    gap: 8px;
-    width: 259px;
-    height: 40px;
-    left: 1039px;
-    top: 16px;
+    width: 40vh;
+    margin-left: 70rem;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
   }
 
   .popup-window {
-    position: absolute;
-    width: 85%;
-    height: 1163px;
-    left: 142px;
+    left: 10rem;
     top: 77px;
-    border-radius: 16px;
-    background-color: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    position: fixed;
     z-index: 2;
+    background: white;
+    overflow-y: scroll;
+  }
+
+  .popups-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 85%;
+    border-radius: 10px;
+    background-color: white;
+    margin: 30px 0 30px 0;
   }
 
   .popup-img {
@@ -961,13 +978,14 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0;
     gap: 12px;
     position: absolute;
-    width: 1108px;
+    width: 97%;
+    justify-content: space-between;
     height: 84px;
     left: 24px;
     top: 24px;
+    background-color: #fff;
   }
 
   .frame1 {
@@ -984,9 +1002,9 @@ textarea {
     flex-direction: row;
     padding: 0;
     gap: 12px;
-    margin-top: 30px;
-    width: 100%;
-    height: 36px;
+    margin-top: 2.5rem;
+    width: auto;
+    margin-right: 2.5rem;
   }
 
   .closeIcon-popup {
@@ -998,12 +1016,11 @@ textarea {
     cursor: pointer;
   }
 
-  .top-block h2 {
+  .popups-proj-title {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
-    line-height: 52px;
     color: #091e42;
     width: auto;
     height: 40px;
@@ -1035,26 +1052,25 @@ textarea {
   }
 
   .divider {
-    display: flex;
-    position: absolute;
+    display: none;
     height: 0;
     left: 4px;
     right: 4px;
-    margin-bottom: 25px;
     color: #ebecf0;
+    margin: auto;
+    overflow-y: scroll;
   }
 
   .divider2 {
-    display: none;
+    display: flex;
+    margin: auto;
+    margin-top: 5rem;
   }
 
   .overlay {
-    height: 1577px;
+    height: 100%;
     width: 100%;
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
     bottom: -260px;
     background: #c1c7d0;
     mix-blend-mode: multiply;
@@ -1086,6 +1102,10 @@ textarea {
     height: 40px;
     left: 159px;
     bottom: 16px;
+  }
+
+  .card-tags1 {
+    display: flex;
   }
 
   .see p {
