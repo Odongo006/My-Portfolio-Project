@@ -424,7 +424,7 @@ textarea {
 
 .error {
   position: absolute;
-  left: 10rem;
+  left: 5rem;
   bottom: 1rem;
   color: rgb(255, 0, 0);
   font-weight: bold;
@@ -924,10 +924,6 @@ textarea {
   }
 
   .hamburger {
-    display: none;
-  }
-
-  .ul-cont {
     display: none;
   }
 
