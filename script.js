@@ -159,4 +159,36 @@ const closeModal = function () {
 
 closeModalBtn.addEventListener('click', closeModal);
 
+// Form validation
+const form = document.querySelector('.form-group');
+const email = document.getElementById('email');
 
+// Invalid error message
+const setError = (message) => {
+  const errorDisplay = document.querySelector('.error');
+  errorDisplay.innerText = message;
+};
+
+// valid success message
+const setSuccess = () => {
+  const errorDisplay = document.querySelector('.error');
+  errorDisplay.innerText = '';
+};
+
+const inputvalidation = (e) => {
+  const emailValue = email.value.trim();
+
+  if (emailValue === '') {
+    setError('Email is required');
+    e.preventDefault();
+  } else if (emailValue.toLowerCase() !== emailValue) {
+    setError('Provide a valid email address');
+    e.preventDefault();
+  } else {
+    setSuccess();
+  }
+};
+
+form.addEventListener('submit', (e) => {
+  inputvalidation(e);
+});

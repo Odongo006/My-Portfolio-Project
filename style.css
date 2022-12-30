@@ -425,9 +425,10 @@ textarea {
 .error {
   position: absolute;
   left: 5rem;
-  bottom: 1rem;
+  margin-top: 5rem;
   color: rgb(255, 0, 0);
   font-weight: bold;
+
 }
 
 .card-frame li {
