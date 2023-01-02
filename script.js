@@ -119,7 +119,6 @@ const openModal2 = function () {
   popupsProjectTitle.innerHTML = storeData[1].name;
   popupsProjectDesktop.innerHTML = storeData[1].content1;
   popupsProjectMobile.innerHTML = storeData[1].content2;
-  popupsProjectTitle.style.fontSize = '20px';
   document.documentElement.scrollTop = 0;
 };
 
@@ -133,7 +132,6 @@ const openModal3 = function () {
   popupsProjectTitle.innerHTML = storeData[2].name;
   popupsProjectDesktop.innerHTML = storeData[2].content1;
   popupsProjectMobile.innerHTML = storeData[2].content2;
-  popupsProjectTitle.style.fontSize = '20px';
   document.documentElement.scrollTop = 0;
 };
 

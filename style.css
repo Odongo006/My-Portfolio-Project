@@ -29,21 +29,12 @@ body {
 }
 
 /* navbar styles */
-.header-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem;
-  position: fixed;
-  z-index: 2;
-  background-color: var(--clr-white);
-  width: 100%;
-}
+
 
 .ul-cont {
   display: none;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   width: 100%;
   height: 100vh;
   background-color: #3145f9f3;
@@ -85,8 +76,10 @@ body {
   height: 10px;
   font-size: 25px;
   color: white;
+  margin-left: 25rem;
   margin: 10% 10% 0 0;
   cursor: pointer;
+  
 }
 
 .showMenu {
@@ -520,6 +513,8 @@ textarea {
     display: none;
   }
 
+
+
   .popup-window {
     box-sizing: border-box;
     display: flex;
@@ -718,6 +713,17 @@ textarea {
     width: 100%;
   }
 
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    position: fixed;
+    z-index: 2;
+    background-color: var(--clr-white);
+    width: 100%;
+  }
+
   .ul-cont {
     display: flex;
     flex-direction: row;
@@ -846,8 +852,13 @@ textarea {
     padding-top: 2rem;
   }
 
-  .card-frame {
-    margin: 0;
+
+
+  .cf2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2rem;
   }
 
   .card-block {
@@ -977,8 +988,6 @@ textarea {
     gap: 12px;
     position: absolute;
     width: 97%;
-    justify-content: space-between;
-    height: 84px;
     left: 24px;
     top: 24px;
     background-color: #fff;
@@ -986,11 +995,10 @@ textarea {
 
   .frame1 {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0;
-    gap: 12px;
-    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    height: 25px;
   }
 
   .frame2 {
@@ -1004,22 +1012,20 @@ textarea {
   }
 
   .closeIcon-popup {
+    border: none;
     color: #67798e;
-    display: flex;
-    margin: auto;
-    margin-left: 60rem;
-    font-size: 30px;
+    font-size: 1.5rem;
     cursor: pointer;
+    padding-bottom: 7rem;
+    
   }
 
   .popups-proj-title {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
+    font-size: 30px;
+    line-height: 52px;
     font-weight: 700;
-    font-size: 40px;
     color: #091e42;
-    width: auto;
-    height: 40px;
+    font-family: 'Poppins', sans-serif;
   }
 
   .right-block {
@@ -1133,9 +1139,6 @@ textarea {
 
   .seeLive {
     box-sizing: border-box;
-
-    /* Auto layout */
-
     display: flex;
     flex-direction: row;
     align-items: center;
