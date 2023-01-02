@@ -25,6 +25,12 @@
 **[My Professional Portfolio]**
 
 ## 🛠 Built With <a name="built-with"></a>
+-Javascript
+-HTML
+-CSS
+-Bootstrap
+-Linters
+
 
 ### Tech Stack <a name="tech-stack"></a>
 
