@@ -682,6 +682,13 @@ textarea {
     padding-top: 3rem;
   }
 
+  .closeIcon {
+    font-size: larger;
+    margin-left: 19rem;
+    border: 2px solid #67798E;
+    color: #fff;
+  }
+
   .about {
     margin: 5rem 0 0 0;
     padding-bottom: 2rem;
