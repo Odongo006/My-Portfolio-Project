@@ -159,4 +159,33 @@ const closeModal = function () {
 
 closeModalBtn.addEventListener('click', closeModal);
 
+// Local Storage
+const nameEl = document.querySelector('.form-name');
+const nameVal = localStorage.getItem('nameEl');
+if (nameEl) {
+  nameEl.value = nameVal;
+}
 
+const mailEl = document.querySelector('.form-email');
+const emailVal = localStorage.getItem('mailEl');
+if (mailEl) {
+  mailEl.value = emailVal;
+}
+
+const commentsEl = document.querySelector('.form-section-textarea');
+const commentsVal = localStorage.getItem('commentsEl');
+if (commentsEl) {
+  commentsEl.value = commentsVal;
+}
+
+nameEl.addEventListener('input', (e) => {
+  localStorage.setItem('nameEl', e.target.value);
+});
+
+mailEl.addEventListener('input', (e) => {
+  localStorage.setItem('mailEl', e.target.value);
+});
+
+commentsEl.addEventListener('input', (e) => {
+  localStorage.setItem('commentsEl', e.target.value);
+});
