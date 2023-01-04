@@ -528,7 +528,7 @@ textarea {
     padding: 16px;
     gap: 12px;
     position: absolute;
-    width: 343px;
+    width: 100%;
     height: 713px;
     left: calc(50% - 343px / 2);
     top: 60px;
@@ -932,7 +932,7 @@ textarea {
     justify-content: space-between;
     align-items: center;
     width: 40vh;
-    margin-left: 70rem;
+    
     font-family: "Poppins", sans-serif;
     list-style: none;
     text-decoration: none;
@@ -944,7 +944,7 @@ textarea {
     display: none;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 1156px;
     position: fixed;
     z-index: 2;
     background: white;
@@ -991,6 +991,7 @@ textarea {
     padding: 0;
     gap: 12px;
     width: auto;
+    margin-left: 2rem;
   }
 
   .frame2 {
@@ -1020,6 +1021,7 @@ textarea {
     color: #091e42;
     width: auto;
     height: 40px;
+    padding-left: 5rem;
   }
 
   .right-block {
