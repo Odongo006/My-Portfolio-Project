@@ -535,6 +535,7 @@ textarea {
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
+    margin-left: 0.7rem;
   }
 
   .frame1 {
@@ -548,7 +549,7 @@ textarea {
   }
 
   .closeIcon-popup {
-    margin-left: 210px;
+    margin-left: 170px;
     margin-bottom: 4rem;
     color: #67798e;
   }
@@ -566,6 +567,10 @@ textarea {
   .popup-img {
     width: 100%;
     height: 100%;
+  }
+
+  .popups-project-p-mobile {
+    margin-left: 0.5rem;
   }
 
   .popups-project-p-desktop {
@@ -610,7 +615,7 @@ textarea {
     position: absolute;
     width: 136px;
     height: 48px;
-    left: 180px;
+    left: 160px;
   }
 
   .seeLive {
@@ -622,7 +627,7 @@ textarea {
     position: absolute;
     width: 136px;
     height: 48px;
-    left: 30px;
+    left: 8px;
   }
 
   .divider2 {
@@ -630,7 +635,7 @@ textarea {
     left: 4px;
     right: 4px;
     border: 1px solid #ebecf0;
-    margin-top: 18.3rem;
+    margin-top: 20.5rem;
   }
 
   .divider {
@@ -651,6 +656,11 @@ textarea {
     background-repeat: no-repeat;
   }
 
+  .see p {
+    font-size: 15px;
+    margin-top: 1rem;
+  }
+
   .card-tags2 {
     display: flex;
     flex-direction: row;
@@ -659,6 +669,7 @@ textarea {
     gap: 8px;
     width: 203px;
     height: 24px;
+    margin-left: 0.5rem;
   }
 
   .card-tags1 {
@@ -937,7 +948,7 @@ textarea {
     list-style: none;
     text-decoration: none;
   }
-
+/**Modal styling**/
   .popup-window {
     left: 10rem;
     top: 77px;
@@ -991,7 +1002,7 @@ textarea {
     padding: 0;
     gap: 12px;
     width: auto;
-    margin-left: 2rem;
+    margin-right: 5rem;
   }
 
   .frame2 {
@@ -1111,12 +1122,13 @@ textarea {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 13.9px;
+    font-size: 14px;
     line-height: 20px;
     display: flex;
     align-items: center;
     text-align: center;
     color: #396df2;
+    margin-top: 0.8rem;
   }
 
   .see1 {
