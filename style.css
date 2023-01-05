@@ -425,7 +425,6 @@ textarea {
 .error {
   position: absolute;
   left: 5rem;
-  bottom: 1rem;
   color: rgb(255, 0, 0);
   font-weight: bold;
 }
