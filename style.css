@@ -721,7 +721,8 @@ textarea {
 
   .input-field {
     width: 290px;
-    margin-left: 1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1180,4 +1181,6 @@ textarea {
     left: 24px;
     top: 781px;
   }
+
+
 }
