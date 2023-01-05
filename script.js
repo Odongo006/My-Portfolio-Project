@@ -10,10 +10,7 @@ const openModalBtn4 = document.querySelector('.card-button4');
 
 const closeModalBtn = document.querySelector('.closeIcon-popup');
 
-function myFunction() {
-  hamburger.classList.add('hamburger-disappear');
-  ulCont.classList.add('ul-cont-appear');
-}
+
 
 ulCont.addEventListener('click', ((e) => {
   if (e.target.classList[0] === 'closeIcon') {
