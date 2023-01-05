@@ -29,11 +29,21 @@ body {
 }
 
 /* navbar styles */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  position: fixed;
+  z-index: 2;
+  background-color: var(--clr-white);
+  width: 100%;
+}
 
 .ul-cont {
   display: none;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   width: 100%;
   height: 100vh;
   background-color: #3145f9f3;
@@ -76,7 +86,6 @@ body {
   font-size: 25px;
   color: white;
   margin: 10% 10% 0 0;
-  margin-left: 25rem;
   cursor: pointer;
 }
 
@@ -416,7 +425,7 @@ textarea {
 .error {
   position: absolute;
   left: 5rem;
-  margin-top: 5rem;
+  bottom: 1rem;
   color: rgb(255, 0, 0);
   font-weight: bold;
 }
@@ -519,13 +528,14 @@ textarea {
     padding: 16px;
     gap: 12px;
     position: absolute;
-    width: 343px;
+    width: 100%;
     height: 713px;
     left: calc(50% - 343px / 2);
     top: 60px;
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
+    margin-left: 0.7rem;
   }
 
   .frame1 {
@@ -539,7 +549,7 @@ textarea {
   }
 
   .closeIcon-popup {
-    margin-left: 210px;
+    margin-left: 170px;
     margin-bottom: 4rem;
     color: #67798e;
   }
@@ -557,6 +567,10 @@ textarea {
   .popup-img {
     width: 100%;
     height: 100%;
+  }
+
+  .popups-project-p-mobile {
+    margin-left: 0.5rem;
   }
 
   .popups-project-p-desktop {
@@ -601,7 +615,7 @@ textarea {
     position: absolute;
     width: 136px;
     height: 48px;
-    left: 180px;
+    left: 160px;
   }
 
   .seeLive {
@@ -613,7 +627,7 @@ textarea {
     position: absolute;
     width: 136px;
     height: 48px;
-    left: 30px;
+    left: 8px;
   }
 
   .divider2 {
@@ -621,7 +635,7 @@ textarea {
     left: 4px;
     right: 4px;
     border: 1px solid #ebecf0;
-    margin-top: 18.3rem;
+    margin-top: 20.5rem;
   }
 
   .divider {
@@ -642,6 +656,11 @@ textarea {
     background-repeat: no-repeat;
   }
 
+  .see p {
+    font-size: 15px;
+    margin-top: 1rem;
+  }
+
   .card-tags2 {
     display: flex;
     flex-direction: row;
@@ -650,6 +669,7 @@ textarea {
     gap: 8px;
     width: 203px;
     height: 24px;
+    margin-left: 0.5rem;
   }
 
   .card-tags1 {
@@ -698,6 +718,12 @@ textarea {
     max-width: 300px;
     line-height: 3rem;
   }
+
+  .input-field {
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -706,17 +732,6 @@ textarea {
     background-size: contain;
     background-position: 0% 100px;
     background-repeat: no-repeat;
-    width: 100%;
-  }
-
-  .header-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem;
-    position: fixed;
-    z-index: 2;
-    background-color: var(--clr-white);
     width: 100%;
   }
 
@@ -848,11 +863,8 @@ textarea {
     padding-top: 2rem;
   }
 
-  .cf2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 2rem;
+  .card-frame {
+    margin: 0;
   }
 
   .card-block {
@@ -937,19 +949,19 @@ textarea {
     justify-content: space-between;
     align-items: center;
     width: 40vh;
-    margin-left: 70rem;
     font-family: "Poppins", sans-serif;
     list-style: none;
     text-decoration: none;
   }
 
+  /**  Modal styling  **/
   .popup-window {
     left: 10rem;
     top: 77px;
     display: none;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 1156px;
     position: fixed;
     z-index: 2;
     background: white;
@@ -982,6 +994,8 @@ textarea {
     gap: 12px;
     position: absolute;
     width: 97%;
+    justify-content: space-between;
+    height: 84px;
     left: 24px;
     top: 24px;
     background-color: #fff;
@@ -989,10 +1003,12 @@ textarea {
 
   .frame1 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 2rem;
-    height: 25px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 12px;
+    width: auto;
+    margin-right: 5rem;
   }
 
   .frame2 {
@@ -1006,19 +1022,23 @@ textarea {
   }
 
   .closeIcon-popup {
-    border: none;
     color: #67798e;
-    font-size: 1.5rem;
+    display: flex;
+    margin: auto;
+    margin-left: 60rem;
+    font-size: 30px;
     cursor: pointer;
-    padding-bottom: 7rem;
   }
 
   .popups-proj-title {
-    font-size: 30px;
-    line-height: 52px;
-    font-weight: 700;
-    color: #091e42;
     font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #091e42;
+    width: auto;
+    height: 40px;
+    padding-left: 5rem;
   }
 
   .right-block {
@@ -1108,12 +1128,13 @@ textarea {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 13.9px;
+    font-size: 14px;
     line-height: 20px;
     display: flex;
     align-items: center;
     text-align: center;
     color: #396df2;
+    margin-top: 0.8rem;
   }
 
   .see1 {
@@ -1132,6 +1153,9 @@ textarea {
 
   .seeLive {
     box-sizing: border-box;
+
+    /* Auto layout */
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1156,5 +1180,10 @@ textarea {
     height: 382px;
     left: 24px;
     top: 781px;
+  }
+
+  .input-field {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
