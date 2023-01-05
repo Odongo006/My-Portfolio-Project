@@ -1,4 +1,6 @@
-
+/* eslint-disable linebreak-style */
+/* eslint-disable prefer-destructuring */
+/* eslint-disable linebreak-style */
 const hamburger = document.querySelector('.hamburger');
 const ulCont = document.querySelector('.ul-cont');
 const modal = document.querySelector('.popup-window');
@@ -9,8 +11,6 @@ const openModalBtn3 = document.querySelector('.card-button3');
 const openModalBtn4 = document.querySelector('.card-button4');
 
 const closeModalBtn = document.querySelector('.closeIcon-popup');
-
-
 
 ulCont.addEventListener('click', ((e) => {
   if (e.target.classList[0] === 'closeIcon') {
@@ -71,6 +71,7 @@ const projectLanguagesCss = document.querySelectorAll('.project-languages-css');
 const projectLanguagesJs = document.querySelectorAll('.project-languages-js');
 const projectsDescription = document.querySelectorAll('.projects-description');
 
+// eslint-disable-next-line no-plusplus
 for (let i = 0; i < projectLanguagesHtml.length; i++) {
   projectImgSrc[i].src = storeData[i].imagesrc;
   projectLanguagesHtml[i].innerHTML = storeData[i].technologies[0];
