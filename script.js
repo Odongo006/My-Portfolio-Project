@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable linebreak-style */
 /* eslint-disable prefer-destructuring */
 /* eslint-disable linebreak-style */
@@ -11,6 +12,10 @@ const openModalBtn3 = document.querySelector('.card-button3');
 const openModalBtn4 = document.querySelector('.card-button4');
 
 const closeModalBtn = document.querySelector('.closeIcon-popup');
+function myFunction() {
+  hamburger.classList.add('hamburger-disappear');
+  ulCont.classList.add('ul-cont-appear');
+}
 
 ulCont.addEventListener('click', ((e) => {
   if (e.target.classList[0] === 'closeIcon') {
