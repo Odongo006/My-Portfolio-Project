@@ -1,10 +1,4 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-alert */
-/* eslint-disable no-useless-escape */
-/* eslint-disable prefer-destructuring */
-/* eslint-disable no-plusplus */
-/* eslint-disable func-names */
-/* eslint-disable linebreak-style */
+
 const hamburger = document.querySelector('.hamburger');
 const ulCont = document.querySelector('.ul-cont');
 const modal = document.querySelector('.popup-window');
