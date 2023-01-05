@@ -943,12 +943,12 @@ textarea {
     justify-content: space-between;
     align-items: center;
     width: 40vh;
-    
     font-family: "Poppins", sans-serif;
     list-style: none;
     text-decoration: none;
   }
-/**Modal styling**/
+
+  /**  Modal styling  **/
   .popup-window {
     left: 10rem;
     top: 77px;
@@ -1176,5 +1176,3 @@ textarea {
     top: 781px;
   }
 }
-
-
