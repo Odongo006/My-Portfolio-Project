@@ -940,15 +940,16 @@ textarea {
 
   .popup-window {
     left: 10rem;
-    top: 77px;
+    top: 3rem;
     display: none;
     justify-content: center;
     align-items: center;
-    width: 1156px;
+    width: 77%;
     position: fixed;
     z-index: 2;
     background: white;
     overflow-y: scroll;
+    height: 92vh;
   }
 
   .popups-container {
@@ -962,12 +963,13 @@ textarea {
 
   .popup-img {
     position: absolute;
-    width: 1080px;
-    height: 586px;
+    width: 96%;
+    height: 65%;
     left: 0;
     top: 0;
-    margin-top: 7rem;
-    margin-left: 30px;
+    margin-top: 9rem;
+    border: none;
+    margin-left: 2%;
   }
 
   .top-block {
@@ -985,13 +987,9 @@ textarea {
   }
 
   .frame1 {
-    display: flex;
-    flex-direction: row;
     align-items: flex-start;
-    padding: 0;
-    gap: 12px;
-    width: auto;
-    margin-left: 2rem;
+    width: 85%;
+    margin-left: -133px;
   }
 
   .frame2 {
@@ -1008,9 +1006,10 @@ textarea {
     color: #67798e;
     display: flex;
     margin: auto;
-    margin-left: 60rem;
-    font-size: 30px;
+    margin-left: 85%;
+    font-size: 25px;
     cursor: pointer;
+    flex-wrap: wrap;
   }
 
   .popups-proj-title {
@@ -1021,20 +1020,15 @@ textarea {
     color: #091e42;
     width: auto;
     height: 40px;
-    padding-left: 5rem;
   }
 
   .right-block {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
-    gap: 12px;
     position: absolute;
-    width: auto;
-    height: 157px;
+    width: 28%;
+    height: max-content;
     right: 24px;
     top: 781px;
+    margin-top: 10px;
   }
 
   .top-block ul {
@@ -1047,6 +1041,11 @@ textarea {
 
   .popups-project-p-desktop {
     display: flex;
+    width: 100%;
+    border: none;
+    padding-left: 10px;
+    color: #344563;
+    margin-top: 10px;
   }
 
   .divider {
@@ -1060,9 +1059,8 @@ textarea {
   }
 
   .divider2 {
-    display: flex;
-    margin: auto;
-    margin-top: 5rem;
+    margin-top: 6rem;
+    margin-right: 1rem;
   }
 
   .overlay {
