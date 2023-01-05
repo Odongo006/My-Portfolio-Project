@@ -594,7 +594,7 @@ textarea {
   }
 
   .overlay {
-    position: absolute;
+    position: fixed;
     left: 0;
     width: auto;
     right: 0;
@@ -1086,7 +1086,7 @@ textarea {
   .overlay {
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: -260px;
     background: #c1c7d0;
     mix-blend-mode: multiply;
