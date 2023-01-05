@@ -101,9 +101,8 @@ npm test
 👤 **Mert**
 
 - GitHub: [@mertkantaroglu](https://github.com/mertkantaroglu)
-- Twitter: [@]()
-- LinkedIn: [@]()
-- Website: [@]()
+- Twitter: [@aranelluinwe](https://twitter.com/aranelluinwe)
+- LinkedIn: [@mert-kantaroglu](https://www.linkedin.com/in/mert-kantaroglu/)
 
 <!-- CONTRIBUTING -->
 
