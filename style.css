@@ -627,7 +627,7 @@ textarea {
     position: absolute;
     width: 136px;
     height: 48px;
-    left: 0px;
+    left: 0;
     right: 2px;
   }
 
