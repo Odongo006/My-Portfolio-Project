@@ -508,7 +508,7 @@ textarea {
 @media screen and (min-width: 320px) {
   .box2 {
     background-image: url(imgs/header-shapes\ mobile@2x.svg);
-    background-position: 0% auto;
+    position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
