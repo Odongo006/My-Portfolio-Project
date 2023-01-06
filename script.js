@@ -160,32 +160,41 @@ const closeModal = function () {
 closeModalBtn.addEventListener('click', closeModal);
 
 // Local Storage
+const contactForm = document.querySelector('.form-input');
 const nameEl = document.querySelector('.form-name');
-const nameVal = localStorage.getItem('nameEl');
-if (nameEl) {
-  nameEl.value = nameVal;
-}
-
 const mailEl = document.querySelector('.form-email');
-const emailVal = localStorage.getItem('mailEl');
-if (mailEl) {
-  mailEl.value = emailVal;
-}
-
 const commentsEl = document.querySelector('.form-section-textarea');
-const commentsVal = localStorage.getItem('commentsEl');
-if (commentsEl) {
-  commentsEl.value = commentsVal;
+const errortxt = document.querySelector('.error');
+const fetchLocalStorage = localStorage.getItem('userProvidedInfo');
+
+// Load to each contact form fields if there is pre-saved local storage data.
+
+if (fetchLocalStorage) {
+  const dataSave = JSON.parse(fetchLocalStorage);
+  nameEl.value = dataSave.name;
+  mailEl.value = dataSave.email;
+  commentsEl.value = dataSave.subject;
 }
 
-nameEl.addEventListener('input', (e) => {
-  localStorage.setItem('nameEl', e.target.value);
+document.querySelectorAll('input, textarea').forEach((input) => {
+  input.addEventListener('input', (event) => {
+    event.preventDefault();
+    // Calling input values
+    const nameData = document.querySelector('#name').value;
+    const emailData = document.querySelector('#email').value;
+    const msgData = document.querySelector('#subject').value;
+
+    // Store values in object;
+    const infoProvided = {
+      name: nameData,
+      email: emailData,
+      subject: msgData,
+    };
+
+    localStorage.setItem('userProvidedInfo', JSON.stringify(infoProvided));
+  });
 });
 
-mailEl.addEventListener('input', (e) => {
-  localStorage.setItem('mailEl', e.target.value);
-});
-
-commentsEl.addEventListener('input', (e) => {
-  localStorage.setItem('commentsEl', e.target.value);
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
 });
