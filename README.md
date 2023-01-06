@@ -75,6 +75,18 @@ To run tests, run the following command:
 
 npm test
 
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Describe 1 - 3 features you will add to the project.
+
+- [ ] **Responsive Design**
+- [ ] **PopUp Modal**
+- [ ] **Dynamic Data in Modals & Projects**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
@@ -85,6 +97,12 @@ npm test
 - Twitter: [@HenryOdongo007](https://twitter.com/HenryOdongo007)
 - LinkedIn: [@HenryOdongo](https://www.linkedin.com/in/henry-odongo-91b830182/)
 - Website: [@Portfolio](https://odongo006.github.io/My-Portfolio-Project/)
+
+👤 **Mert**
+
+- GitHub: [@mertkantaroglu](https://github.com/mertkantaroglu)
+- Twitter: [@aranelluinwe](https://twitter.com/aranelluinwe)
+- LinkedIn: [@mert-kantaroglu](https://www.linkedin.com/in/mert-kantaroglu/)
 
 <!-- CONTRIBUTING -->
 
