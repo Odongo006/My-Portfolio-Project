@@ -448,7 +448,6 @@ textarea {
 .btn:hover {
   background-color: var(--clr-purple);
   color: var(--clr-white);
-  size: 3px;
 }
 
 .card-tags {
