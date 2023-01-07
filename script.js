@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 /* eslint-disable no-unused-vars */
 /* eslint-disable linebreak-style */
 /* eslint-disable prefer-destructuring */
@@ -171,6 +172,31 @@ const setSuccess = () => {
 };
 
 const inputvalidation = (e) => {
+  const emailValue = email.value.trim();
+
+  if (emailValue === '') {
+    setError('Email is required');
+    e.preventDefault();
+  } else if (emailValue.toLowerCase() !== emailValue) {
+    setError('Provide a valid email address');
+    e.preventDefault();
+  } else {
+    setSuccess();
+  }
+};
+
+form.addEventListener('submit', (e) => {
+  inputvalidation(e);
+});
+
+
+//debbuger exercise
+const setSuccess = () => function { 
+  const errorDisplay = document.querySelector('.error');
+  errorDisplay.innerText = '';
+};
+
+var inputvalidation = (e) => {
   const emailValue = email.value.trim();
 
   if (emailValue === '') {
