@@ -94,6 +94,17 @@ body {
   cursor: pointer;
 }
 
+.closeIcon {
+  display: block;
+  background-image: url(imgs/x-icon.png);
+  width: 10px;
+  height: 10px;
+  font-size: 25px;
+  color: white;
+  margin: 15% 10% 0 0;
+  cursor: pointer;
+}
+
 .showMenu {
   transform: translateY(0);
 }
