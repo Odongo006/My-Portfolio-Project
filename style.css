@@ -51,6 +51,11 @@ body {
   z-index: 1;
 }
 
+.top-nav {
+  margin-top: 10%;
+  width: 100%;
+}
+
 .ul-cont-appear {
   display: flex;
 }
