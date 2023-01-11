@@ -83,17 +83,6 @@ body {
   color: #6070ff;
 }
 
-.closeIcon-popup {
-  display: block;
-  background-image: url(imgs/x-icon.png);
-  width: 10px;
-  height: 10px;
-  font-size: 25px;
-  color: white;
-  margin: 10% 10% 0 0;
-  cursor: pointer;
-}
-
 .closeIcon {
   display: block;
   background-image: url(imgs/x-icon.png);
@@ -102,6 +91,17 @@ body {
   font-size: 25px;
   color: white;
   margin: 15% 10% 0 0;
+  cursor: pointer;
+}
+
+.closeIcon-popup {
+  display: block;
+  background-image: url(imgs/x-icon.png);
+  width: 10px;
+  height: 10px;
+  font-size: 25px;
+  color: white;
+  margin: 10% 10% 0 0;
   cursor: pointer;
 }
 
