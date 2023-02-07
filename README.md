@@ -24,6 +24,8 @@
 
 **[My Professional Portfolio]**
 
+This is my portfolio project, it is a collection of my best work samples, showcasing my skills and expertise in web development. It typically includes live websites that I have built. It demonstrates my proficiency in web development technologies such as HTML, CSS Javascript, and a web development framework such as Ruby on Rails.
+
 ## 🛠 Built With <a name="built-with"></a>
 -Javascript
 -HTML
