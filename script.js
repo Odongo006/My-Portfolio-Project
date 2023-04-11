@@ -1,10 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-alert */
-/* eslint-disable no-useless-escape */
-/* eslint-disable prefer-destructuring */
-/* eslint-disable no-plusplus */
-/* eslint-disable func-names */
-/* eslint-disable linebreak-style */
 const hamburger = document.querySelector('.hamburger');
 const ulCont = document.querySelector('.ul-cont');
 const modal = document.querySelector('.popup-window');
@@ -33,10 +26,10 @@ ulCont.addEventListener('click', ((e) => {
 
 const storeData = [
   {
-    name: 'Tonic',
+    name: 'Promo',
     description: 'A daily selection of privately personalized reads; no accounts or sign- ups required',
-    imagesrc: 'imgs/poster.svg',
-    imagesrc2: 'imgs/snaps.png',
+    imagesrc: 'imgs/Screenshot1.png',
+    imagesrc2: 'imgs/Screenshot1.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
     link: 'link_to_live_version.com',
     content1: 'Lorem ipsum it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
@@ -45,18 +38,18 @@ const storeData = [
     tags2: ['Github', 'Ruby', 'Frontend'],
   },
   {
-    name: 'Multi Post Stories',
+    name: 'Awesome Books',
     description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    imagesrc: 'imgs/poster2.svg',
+    imagesrc: 'imgs/awesome-books.jpg',
     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
     link: 'link_to_live_version.com',
     content1: 'Lorem ipsum it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     content2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus repellendus mollitia saepe maxime vitae nostrum repellat eligendi amet voluptas modi repudiandae necessitatibus animi harum obcaecati at omnis laboriosam sapiente eum rem velit molestias',
   },
   {
-    name: 'Facebook 360',
+    name: 'To-Do List',
     description: 'Exploring the future of media in Facebook,s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    imagesrc: 'imgs/poster 3.svg',
+    imagesrc: 'imgs/To-do-list.jpg',
     technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
     link: 'link_to_live_version.com',
     content1: 'Lorem ipsum it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
