@@ -184,7 +184,9 @@ main {
 }
 
 .cards {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   flex-direction: column;
   box-sizing: border-box;
   background: var(--clr-white);
@@ -390,7 +392,7 @@ button.card-button:active {
   box-sizing: border-box;
   background: var(--clr-white);
   border: 1px solid #dfe1e6;
-  padding: 1rem;
+  padding: 20px;
   gap: 12px;
   border-radius: 1rem;
   box-shadow: 8px 8px 10px -10px rgb(209, 204, 204);
@@ -806,8 +808,8 @@ textarea {
   }
 
   .card img {
-    width: 544px;
-    height: 448px;
+    width: 100%;
+    height: auto;
     top: 24px;
     left: 590px;
     border-radius: 8px;
@@ -823,6 +825,7 @@ textarea {
     top: 0;
     bottom: 0;
     border-radius: 24px;
+    width: 100%;
   }
 
   .card-block h2 {
